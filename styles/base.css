@@ -5,21 +5,54 @@
     --accent2-color: #E3DAC9;
     --button1-color: #034732;
     --button2-color: #E3DAC9;
-    --heading-font: "Times New Roman", "Georgia", serif;
-    --body-font: Arial, Helvetica, sans-serif;
 }
 
+body {
+    font-family: "Newsreader", serif;
+}
 
+header {
+    font-family: "Goblin One", serif;
+}
 
-header span {
+h1 {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    align-items: center;
+    padding: 1rem;
+    border: 1px solid var(--accent1-color);
+    text-align: center;
+}
+
+header span {
     display: block;
 }
 
-header nav {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+nav {
+    background-color: var(--button1-color);
+
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    color: var(--button2-color);
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li {
+        flex: 1 0 auto;
+    }
 }
