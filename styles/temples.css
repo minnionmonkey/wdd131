@@ -60,7 +60,7 @@ nav a:hover {
     border: 0;
     background: none;
     color: var(--accent2-color);
-    align-self: self-start;
+    padding: 1rem;
 }
 
 #menu::before {
