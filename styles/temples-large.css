@@ -18,4 +18,12 @@
     img {
         width: 100%;
     }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation li{
+        display: block;
+    }
 }
